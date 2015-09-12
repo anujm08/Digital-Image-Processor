@@ -164,7 +164,7 @@ void dialog::on_bok_click(Gtk::Entry *bvalue,int j)
         im->createim();
         if(imagestatus)
         {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
         }
         hide();
     }
@@ -301,7 +301,7 @@ void dialog::on_bok3_click(Gtk::Entry *bx1,Gtk::Entry *bx2,Gtk::Entry *by1,Gtk::
         im->createim();
         if(imagestatus)
         {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
         }
         hide();
     }
@@ -376,7 +376,7 @@ void dialog::on_click_rotatea_button()
     set_label();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     hide();
 }
@@ -391,7 +391,7 @@ void dialog::on_click_rotatec_button()
     set_label();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     hide();
 }

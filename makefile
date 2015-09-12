@@ -19,7 +19,6 @@ SRCDIR = $(PROJECT_ROOT)/src
 OBJDIR = $(PROJECT_ROOT)/objs
 BINDIR = $(PROJECT_ROOT)/bin
 INCLUDEDIR = $(PROJECT_ROOT)/include
-TEMPDIR = $(PROJECT_ROOT)/bin/temp
 
 # Compiler and Linker flags
 
@@ -59,9 +58,8 @@ all: dirs exe makesubmission
 
 dirs:
 	@$(ECHO) "Making directories"
-	@mkdir -p objs
-	@mkdir -p bin
-	@mkdir -p $(TEMPDIR)
+	@mkdir -p $(OBJDIR)
+	@mkdir -p $(BINDIR)
 
 
 exe: $(BINDIR)/$(TARGET)

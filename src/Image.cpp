@@ -137,7 +137,7 @@ void Image::createim() //creating image
     std::ofstream fo;
     char linech[10];
     int i,j,k,temp;
-    fo.open("temp/image_temp.bmp");
+    fo.open(".image_temp.bmp");
     if(!fo)
     {
         Gtk::MessageDialog dlg("Can't create output image in the ImageEditor folder.", false, Gtk::MESSAGE_INFO, Gtk::BUTTONS_OK, true);

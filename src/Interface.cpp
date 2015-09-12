@@ -168,7 +168,7 @@ void Interface::filechoose()
 
         if(imagestatus)
        {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
             imageb->set_image_position(Gtk::POS_BOTTOM);
             imageb->set_image(*m_image);
             m_image->show();
@@ -215,7 +215,7 @@ void Interface::on_click_image_button()
 {
         if(!imagestatus)
         {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
             imageb->set_image_position(Gtk::POS_BOTTOM);
             imageb->set_image(*m_image);
             imagestatus=1;
@@ -237,7 +237,7 @@ void Interface::on_click_grayscale_button()
     imag.createim(); //creating image so that it can be displayed
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");//changing image this is temp image we are saving after every action
+        m_image->set(".image_temp.bmp");//changing image this is temp image we are saving after every action
     }
     imag.no_undo=0; //because last step is now not undo necessary for implementaton of redo indicates redo not possible
     imag.is_save=false; //image is not saved
@@ -257,7 +257,7 @@ void Interface::on_click_sepia_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -269,7 +269,7 @@ void Interface::on_click_negative_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -289,7 +289,7 @@ void Interface::on_click_contrast_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -312,7 +312,7 @@ void Interface::on_click_flip_horizontal_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -325,7 +325,7 @@ void Interface::on_click_flip_vertical_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -338,7 +338,7 @@ void Interface::on_click_dither_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -352,7 +352,7 @@ void Interface::on_click_edge_detect_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -374,7 +374,7 @@ void Interface::on_click_salt_pepper_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -387,7 +387,7 @@ void Interface::on_click_halftone_button()
     imag.createim();
     if(imagestatus)
     {
-        m_image->set("temp/image_temp.bmp");
+        m_image->set(".image_temp.bmp");
     }
     imag.no_undo=0;
     imag.is_save=false;
@@ -415,7 +415,7 @@ void Interface::on_click_undo_button()
         imag.createim();
         if(imagestatus)
         {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
         }
         set_label();
     }
@@ -437,7 +437,7 @@ void Interface::on_click_redo_button()
         imag.createim();
         if(imagestatus)
         {
-            m_image->set("temp/image_temp.bmp");
+            m_image->set(".image_temp.bmp");
         }
         set_label();
     }
