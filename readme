@@ -1,0 +1,10 @@
+To run Digital Image Processor, do the following
+
+1) 'gtkmm 3.0' must be installed in the system. To install it, write the following command in the terminal
+sudo apt-get install libgtkmm-3.0-dev
+
+2) Change current directory to the project directory
+
+3) Write 'make' on the terminal
+
+4) A executable 'ImageProcessor' get created in the bin folder in this directory. Run it to run the program.
